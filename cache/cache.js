@@ -5,10 +5,10 @@ class Cache{
     {
         this.data=[];
         this.time=time;
-        // setInterval(async ()=>{
-        //     await this.delete()
-        //     await this.populateCache()
-        // },time)
+        setInterval(async ()=>{
+            await this.delete()
+            await this.populateCache()
+        },time)
     }
     async populateCache()
     {

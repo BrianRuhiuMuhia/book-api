@@ -7,7 +7,7 @@ router.post("/addbook",addBook)
 router.patch("/updatebook",updateBook)
 router.delete("/deletebook/:id",deleteBook)
 router.all('*',(req,res)=>{
-    res.send("hello")
+    res.json({"message":"404"})
 })
 
 module.exports=router
